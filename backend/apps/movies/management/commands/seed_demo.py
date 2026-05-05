@@ -34,7 +34,7 @@ MOVIES = [
             "к продовольственному кризису, коллектив исследователей и учёных "
             "отправляется сквозь червоточину в поисках новой обитаемой планеты."
         ),
-        "poster": "https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=500&h=750&fit=crop",
+        "poster": "https://image.tmdb.org/t/p/w500/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg",
         "rating": Decimal("8.6"),
         "genres": ["Фантастика", "Драма", "Приключения"],
     },
@@ -48,7 +48,7 @@ MOVIES = [
             "Кобб — талантливый вор в опасном искусстве извлечения секретов "
             "из подсознания во сне."
         ),
-        "poster": "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=500&h=750&fit=crop",
+        "poster": "https://image.tmdb.org/t/p/w500/xlaY2zyzMfkhk0HSC5VUwzoZPU1.jpg",
         "rating": Decimal("8.8"),
         "genres": ["Фантастика", "Триллер", "Приключения"],
     },
@@ -59,7 +59,7 @@ MOVIES = [
         "director": "Кристофер Нолан",
         "country": "США, Великобритания",
         "description": "Бэтмен поднимает ставки в войне с криминалом Готэма.",
-        "poster": "https://images.unsplash.com/photo-1509347528160-9a9e33742cdb?w=500&h=750&fit=crop",
+        "poster": "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
         "rating": Decimal("9.0"),
         "genres": ["Экшн", "Драма", "Триллер"],
     },
@@ -70,7 +70,7 @@ MOVIES = [
         "director": "Фрэнк Дарабонт",
         "country": "США",
         "description": "История бухгалтера Энди Дюфрейна, обвинённого в убийстве жены.",
-        "poster": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=500&h=750&fit=crop",
+        "poster": "https://image.tmdb.org/t/p/w500/9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg",
         "rating": Decimal("9.3"),
         "genres": ["Драма"],
     },
@@ -81,7 +81,7 @@ MOVIES = [
         "director": "Роберт Земекис",
         "country": "США",
         "description": "Жизнь Форреста Гампа — простого человека с большим сердцем.",
-        "poster": "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=500&h=750&fit=crop",
+        "poster": "https://image.tmdb.org/t/p/w500/Cw4hIUIAmSYfK9QfaUW5igp9La.jpg",
         "rating": Decimal("8.8"),
         "genres": ["Драма", "Комедия", "Мелодрама"],
     },
@@ -92,7 +92,7 @@ MOVIES = [
         "director": "Лана Вачовски, Лилли Вачовски",
         "country": "США",
         "description": "Хакер Нео узнаёт правду об окружающей его реальности.",
-        "poster": "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=500&h=750&fit=crop",
+        "poster": "https://image.tmdb.org/t/p/w500/aOIuZAjPaRIE6CMzbazvcHuHXDc.jpg",
         "rating": Decimal("8.7"),
         "genres": ["Фантастика", "Экшн"],
     },
