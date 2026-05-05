@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# Node
+node_modules/
+.npm/
+.pnpm-store/
+
+# Build / dist
+dist/
+build/
+.vite/
+backend/staticfiles/
+backend/db.sqlite3
+backend/db.sqlite3-journal
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# Editors / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo

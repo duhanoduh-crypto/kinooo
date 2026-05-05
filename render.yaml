@@ -1,0 +1,34 @@
+# Blueprint для деплоя бэкенда Kinoclone на Render.
+# Создаёт PostgreSQL и веб-сервис на gunicorn (см. backend/Procfile / build.sh).
+
+databases:
+  - name: kinoclone-db
+    plan: free
+    databaseName: kinoclone
+    user: kinoclone
+
+services:
+  - type: web
+    name: kinoclone-api
+    runtime: python
+    plan: free
+    rootDir: backend
+    buildCommand: ./build.sh
+    startCommand: gunicorn kinoclone.wsgi:application --bind 0.0.0.0:$PORT --workers 3 --timeout 60
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.5
+      - key: DJANGO_SECRET_KEY
+        generateValue: true
+      - key: DJANGO_DEBUG
+        value: "false"
+      - key: DJANGO_ALLOWED_HOSTS
+        value: ".onrender.com"
+      - key: DATABASE_URL
+        fromDatabase:
+          name: kinoclone-db
+          property: connectionString
+      - key: DJANGO_CORS_ALLOWED_ORIGINS
+        sync: false  # вписать свой Vercel-домен после деплоя фронта
+      - key: DJANGO_CSRF_TRUSTED_ORIGINS
+        sync: false
