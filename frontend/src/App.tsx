@@ -17,6 +17,7 @@ import Recommendations from "./pages/Recommendations";
 import AdminPanel from "./pages/AdminPanel";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
+import WelcomeDialog from "./components/WelcomeDialog";
 
 const queryClient = new QueryClient();
 
@@ -26,6 +27,7 @@ const App = () => (
       <AuthProvider>
         <Toaster />
         <Sonner />
+        <WelcomeDialog />
         <BrowserRouter>
           <ScrollToTop />
           <Routes>
